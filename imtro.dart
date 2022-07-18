@@ -131,8 +131,8 @@ String myName(String name){
   return c;
 }
 
-int areaOfCircle(double b,){
+double areaOfCircle(double b,){
   double c;
   c = pi * b*b;
-  return c.toInt();
+  return c;
 }
