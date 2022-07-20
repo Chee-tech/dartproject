@@ -46,7 +46,7 @@ main(){
 // int? numV = int.parse(stdin.readLineSync()!);
 //
 // if(numV >= 0){
-//   print("$numV is a Positve Number");
+//   print("$numV is a Positive Number");
 // }
 // else{
 //   print("$numV is a Negative Number");
@@ -102,37 +102,68 @@ main(){
 // var una = HelloWorld();
 // una.addTwoNumbers(4, 20);
 
-print(myName("My name is Chigozie Johnpaul"));
-print(areaOfCircle(10));
-}
-
-// function with Parameters
-
-// int addTwoNumbers(int a, int b,){
-//   int c;
-//   c = a + b;
+// print(myName("My name is Chigozie Johnpaul"));
+// print(areaOfCircle(10));
+// }
+//
+// // function with Parameters
+//
+// // int addTwoNumbers(int a, int b,){
+// //   int c;
+// //   c = a + b;
+// //   return c;
+// // }
+// //
+// // class HelloWorld{
+// //
+// //   int addTwoNumbers(int a, int b,){
+// //     int c;
+// //     c = a + b;
+// //     return c;
+// //   }
+// // }
+//
+//
+// //Class work
+// String myName(String name){
+//   String c = name;
+//
 //   return c;
 // }
 //
-// class HelloWorld{
-//
-//   int addTwoNumbers(int a, int b,){
-//     int c;
-//     c = a + b;
-//     return c;
-//   }
-// }
-
-
-//Class work
-String myName(String name){
-  String c = name;
-
-  return c;
+// double areaOfCircle(double b,){
+//   double c;
+//   c = pi * b*b;
+//   return c;
+int k = 50;
+int t = 0;
+int rse;
+try{
+  rse = k ~/t;
+}on UnsupportedError{
+  print("Cannot divide by zero");
 }
+catch(ex){
+  print(ex);
+}
+finally{
+  print("Always Execute");
+}
+print("Number 1");
+//Future.delayed(Duration(seconds:3),() => print("Number 2"));
 
-double areaOfCircle(double b,){
-  double c;
-  c = pi * b*b;
-  return c;
+print("Number 3");
+print("Number 4");
+  getNumber();
+// Asynchronous Example
+
+
+}
+void getNumber() async{
+  int number = await newNumber();
+  print(number);
+
+}
+Future<int> newNumber(){
+  return Future.delayed(Duration(seconds:3),() => 2);
 }

@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="run" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-    <option name="filePath" value="$PROJECT_DIR$/imtro.dart" />
+    <option name="filePath" value="$PROJECT_DIR$/classwork.dart" />
     <method v="2" />
   </configuration>
 </component>
