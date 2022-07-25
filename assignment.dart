@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 main() {
   print(
       "Read the Questions Carefully and choose a matching option for each Question");
@@ -186,4 +187,38 @@ else{
   }
 print("Your correct answers are:$score");
   print("you got ${score.length}/10");
+
+//1
+  var random = Random();
+var number =  random.nextInt(100);
+  print("A number is randomly Generated between 0 - 100");
+  print("Guess the number an win a lottery");
+  int? numInput = int.parse(stdin.readLineSync()!);
+
+  if(numInput == number){
+    print("You got is right: You have won 100million Naira for yourself");
+  }
+  else if(numInput  >=number ){
+    print("Your guess is too high try again");
+    print(number);
+  }
+  else if( numInput  <=number  ){
+    print("Your guess is too low try again");
+    print(number);
+  }
+  else {
+    print("You loose the game and the number is");
+    print(number);
+  }
+  //2
+  print("Enter a number");
+  int? numInput2 = int.parse(stdin.readLineSync()!);
+
+for (var i = 1; i <= numInput2;i++ ){
+  if(numInput2 % i == 0){
+    print(i);
+  }
+}
+
+
 }
