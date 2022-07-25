@@ -3,19 +3,22 @@ main() {
   print(
       "Read the Questions Carefully and choose a matching option for each Question");
   //1
+  List score = [];
   String ques1 = "1: What is capital of Nigeria";
   String option1a = "A: Abuja";
   String option1b = "B: Enugu";
   String ans1 = "A";
-  print(ques1);
-  print(option1a);
-  print(option1b);
+  print(ques1.toLowerCase().toUpperCase());
+  print(option1a.toLowerCase().toUpperCase());
+  print(option1b.toLowerCase().toUpperCase());
   String? input1 = stdin.readLineSync()!;
-if(input1 == ans1){
+if(input1.toLowerCase().toUpperCase() == ans1.toLowerCase().toUpperCase()){
   print("Correct answer");
+  score.add(1);
 }
 else{
   print("Wrong Answer");
+  print("Ans is $ans1");
 }
 
 //2
@@ -23,15 +26,17 @@ else{
   String option2a = "A: 6";
   String option2b = "B: 12";
   String ans2 = "A";
-  print(ques2);
-  print(option2a);
-  print(option2b);
+  print(ques2.toLowerCase().toUpperCase());
+  print(option2a.toLowerCase().toUpperCase());
+  print(option2b.toLowerCase().toUpperCase());
   String? input2 = stdin.readLineSync()!;
-  if(input2 == ans2){
+  if(input2.toLowerCase().toUpperCase() == ans2.toLowerCase().toUpperCase()){
     print("Correct answer");
+    score.add(2);
   }
   else{
     print("Wrong Answer");
+    print("Ans is $ans2");
   }
 
   //3
@@ -40,14 +45,16 @@ else{
   String option3b = "B: 25";
   String ans3 = "A";
   print(ques3);
-  print(option3a);
-  print(option3b);
+  print(option3a.toLowerCase().toUpperCase());
+  print(option3b.toLowerCase().toUpperCase());
   String? input3 = stdin.readLineSync()!;
-  if(input3 == ans3){
+  if(input3.toLowerCase().toUpperCase() == ans3.toLowerCase().toUpperCase()){
     print("Correct answer");
+    score.add(3);
   }
   else{
     print("Wrong Answer");
+    print("Ans is $ans3");
   }
 
   //4
@@ -55,15 +62,17 @@ else{
   String option4a = "A: Lia Muhammed";
   String option4b = "B: Muhammadu Buhari";
   String ans4 = "B";
-  print(ques4);
-  print(option4a);
-  print(option4b);
+  print(ques4.toLowerCase().toUpperCase());
+  print(option4a.toLowerCase().toUpperCase());
+  print(option4b.toLowerCase().toUpperCase());
   String? input4 = stdin.readLineSync()!;
-  if(input4 == ans4){
+  if(input4.toLowerCase().toUpperCase() == ans4.toLowerCase().toUpperCase()){
     print("Correct answer");
+    score.add(4);
   }
   else{
     print("Wrong Answer");
+    print("Ans is $ans4");
   }
 
   //5
@@ -71,15 +80,17 @@ else{
   String option5a = "A: 3";
   String option5b = "B: 26";
   String ans5 = "A";
-  print(ques5);
-  print(option5a);
-  print(option5b);
+  print(ques5.toLowerCase().toUpperCase());
+  print(option5a.toLowerCase().toUpperCase());
+  print(option5b.toLowerCase().toUpperCase());
   String? input5 = stdin.readLineSync()!;
-  if(input5 == ans5){
+  if(input5.toLowerCase().toUpperCase() == ans5.toLowerCase().toUpperCase()){
     print("Correct answer");
+    score.add(5);
   }
   else{
     print("Wrong Answer");
+    print("Ans is $ans5");
   }
 
   //6
@@ -87,15 +98,17 @@ else{
   String option6a = "A: 6";
   String option6b = "B: 2";
   String ans6 = "B";
-  print(ques6);
-  print(option6a);
-  print(option6b);
+  print(ques6.toLowerCase().toUpperCase());
+  print(option6a.toLowerCase().toUpperCase());
+  print(option6b.toLowerCase().toUpperCase());
   String? input6 = stdin.readLineSync()!;
-  if(input6 == ans6){
+  if(input6.toLowerCase().toUpperCase() == ans6.toLowerCase().toUpperCase()){
     print("Correct answer");
+    score.add(6);
   }
   else{
     print("Wrong Answer");
+    print("Ans is $ans6");
   }
 
   //7
@@ -103,15 +116,17 @@ else{
   String option7a = "A: Western part";
   String option7b = "B: Northern part";
   String ans7 = "B";
-  print(ques7);
-  print(option7a);
-  print(option7b);
+  print(ques7.toLowerCase().toUpperCase());
+  print(option7a.toLowerCase().toUpperCase());
+  print(option7b.toLowerCase().toUpperCase());
   String? input7 = stdin.readLineSync()!;
-  if(input7 == ans7){
+  if(input7.toLowerCase().toUpperCase() == ans7.toLowerCase().toUpperCase()){
     print("Correct answer");
+    score.add(7);
   }
   else{
     print("Wrong Answer");
+    print("Ans is $ans7");
   }
 
   //8
@@ -119,15 +134,17 @@ else{
   String option8a = "A: Naira";
   String option8b = "B: Dollar";
   String ans8 = "A";
-  print(ques8);
-  print(option8a);
-  print(option8b);
+  print(ques8.toLowerCase().toUpperCase());
+  print(option8a.toLowerCase().toUpperCase());
+  print(option8b.toLowerCase().toUpperCase());
   String? input8 = stdin.readLineSync()!;
-  if(input8 == ans8){
+  if(input8.toLowerCase().toUpperCase() == ans8.toLowerCase().toUpperCase()){
     print("Correct answer");
+    score.add(8);
   }
   else{
     print("Wrong Answer");
+    print("Ans is $ans8");
   }
 
   //9
@@ -135,15 +152,17 @@ else{
   String option9a = "A: 109";
   String option9b = "B: 102";
   String ans9 = "A";
-  print(ques9);
-  print(option9a);
-  print(option9b);
+  print(ques9.toLowerCase().toUpperCase());
+  print(option9a.toLowerCase().toUpperCase());
+  print(option9b.toLowerCase().toUpperCase());
   String? input9 = stdin.readLineSync()!;
-  if(input9 == ans9){
+  if(input9.toLowerCase().toUpperCase() == ans9.toLowerCase().toUpperCase()){
     print("Correct answer");
+    score.add(9);
   }
   else{
     print("Wrong Answer");
+    print("Ans is $ans9");
   }
 
   //10
@@ -151,16 +170,20 @@ else{
   String option10a = "A: Aliko Dangote";
   String option10b = "B: Mike Adenuga";
   String ans10 = "A";
-  print(ques10);
-  print(option10a);
-  print(option10b);
+  print(ques10.toLowerCase().toUpperCase());
+  print(option10a.toLowerCase().toUpperCase());
+  print(option10b.toLowerCase().toUpperCase());
   String? input10 = stdin.readLineSync()!;
-  if(input10 == ans10){
+  if(input10.toLowerCase().toUpperCase() == ans10.toLowerCase().toUpperCase()){
     print("Correct answer");
+    score.add(10);
+
+
   }
   else{
     print("Wrong Answer");
+    print("Ans is $ans10");
   }
-  
-
+print("Your correct answers are:$score");
+  print("you got ${score.length}/10");
 }
